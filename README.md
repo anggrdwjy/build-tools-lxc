@@ -32,6 +32,26 @@ Reading state information... Done
 N: Repository 'http://ftp.debian.org/debian bullseye InRelease' changed its 'Version' value from '11.10' to '11.11'
 root@bayfront-pve:~# 
 ```
+Remove Proxmox Subscription :
+---------------
+```
+#Working Directory
+cd /usr/share/javascript/proxmox-widget-toolkit
+
+#Create Backup
+cp proxmoxlib.js proxmoxlib.js.bak
+
+#Edit Proxmox Lib
+nano proxmoxlib.js
+
+#Edit Lib
+checked_command: function(orig_cmd) {
+    orig_cmd();
+    return;
+
+#Restart PVE PROXY
+systemctl restart pveproxy.service
+```
 SSH Configuration Linux Container / VPS :
 ---------------
 ```
