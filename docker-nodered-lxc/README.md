@@ -18,12 +18,10 @@ chmod -R 777 *
 Install NodeRED :
 -----------------
 ```
+#Install NodeRED
 ./docker-nodered-lxc.sh
-```
 
-Verification :
----------------
-```
+#Verification
 docker ps -a
 ```
 
