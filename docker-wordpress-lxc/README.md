@@ -31,7 +31,7 @@ docker ps -a
 
 Setup Wordpress :
 ---------------
-Configuration Wordpress Admin
+Wordpress Admin
 ```
 http://ip-address/wp-admin
 ```
