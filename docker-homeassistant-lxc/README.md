@@ -18,12 +18,10 @@ chmod -R 777 *
 Install Home Assistant :
 -----------------
 ```
+#Install HomeAssistant
 ./docker-homeassistant-lxc.sh
-```
 
-Verification :
----------------
-```
+#Verification
 docker ps -a
 ```
 
