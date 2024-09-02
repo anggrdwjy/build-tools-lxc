@@ -1,6 +1,6 @@
 #!/bin/bash
 #author : Anggarda Saputra Wijaya. anggarda.wijaya@outlook.com. github.com/anggardawjy
-#version : 0.1
+#version : 0.3
 #about : ubuntu 22.04 docker-ce install
 sudo apt update
 sudo apt install sudo -y
