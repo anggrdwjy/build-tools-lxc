@@ -1,5 +1,5 @@
 # Bash Scripting Wordpress Package Install on Docker
-Script Automation Installation and Running Wordpress Package Install on Docker Container
+Script Installation and Running Wordpress Package Install on Docker Container
 
 This Package Include MYSQL Database
 
