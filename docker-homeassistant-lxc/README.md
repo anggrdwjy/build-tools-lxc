@@ -3,15 +3,15 @@ Script Automation Running Home Assistant on Docker
 
 Notes :
 ---------------
-First Step Installing Docker Daemon on Linux
-Source : https://github.com/anggrdwjy/docker-install-lxc
+First Step Installing Docker on Linux
+Source : [Build Tools LXC](https://github.com/anggrdwjy/build-tools-lxc)
 
 Configuration :
 ---------------
 Git Clone Home Assistant From Repository :
 ```
-git clone https://github.com/anggrdwjy/docker-homeassistant-lxc
-cd docker-homeassistant-lxc
+git clone https://github.com/anggrdwjy/build-tools-lxc
+cd build-tools-lxc/docker-homeassistant-lxc
 chmod -R 777 *
 ```
 
@@ -29,7 +29,7 @@ docker ps -a
 
 Setup Home Assistant :
 ---------------
-Access Web UI
+Web UI Home Assistant
 ```
 http://ip-address:8123
 ```
