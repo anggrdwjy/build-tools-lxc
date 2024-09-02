@@ -1,17 +1,17 @@
 # Bash Scripting EMQX MQTT Broker on Docker
-Script Automation Installation and Running MQTT Broker on Docker Container
+Script Installation and Running MQTT Broker on Docker Container
 
 Notes :
 ---------------
-First Step Installing Docker Daemon on Linux
-Source : https://github.com/anggrdwjy/docker-install-lxc
+First Step Installing Docker on Linux
+Source : [Build Tools LXC](https://github.com/anggrdwjy/build-tools-lxc)
 
 Configuration :
 ---------------
 Git Clone EMQX MQTT Broker From Repository :
 ```
-git clone https://github.com/anggrdwjy/docker-mqtt-lxc
-cd docker-mqtt-lxc
+git clone https://github.com/anggrdwjy/build-tools-lxc
+cd build-tools-lxc/docker-mqtt-lxc
 chmod -R 777 *
 ```
 
@@ -29,7 +29,7 @@ docker ps -a
 
 Configuration EMQX MQTT Broker :
 ---------------
-Access Web UI
+Web Admin
 ```
 http://ip-address:18083
 ```
