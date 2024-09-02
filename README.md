@@ -33,6 +33,18 @@ Reading state information... Done
 N: Repository 'http://ftp.debian.org/debian bullseye InRelease' changed its 'Version' value from '11.10' to '11.11'
 root@bayfront-pve:~# 
 ```
+SSH Configuration Linux Container / VPS :
+---------------
+```
+#SSH Permit Login
+nano /etc/ssh/sshd_config
+PermitRootLogin Yes
+Port 21112 <- Custom Port SSH
+
+#Verification
+systemctl restart sshd
+systemctl status sshd
+```
 
 # Bash Scripting Install Docker
 Script Install Docker CE for Linux Container / VPS 
