@@ -1,7 +1,5 @@
 # Bash Scripting Wordpress Package Install on Docker
-Script Installation and Running Wordpress Package Install on Docker Container
-
-This Package Include MYSQL Database
+Script Installation and Running Wordpress Package Install on Docker Container. This Package Include MYSQL Database
 
 Notes :
 ---------------
@@ -10,35 +8,28 @@ Source : [Build Tools LXC](https://github.com/anggrdwjy/build-tools-lxc)
 
 Configuration :
 ---------------
-Git Clone Wordpress Package Install From Repository :
 ```
+#GIT Clone From Repository
 git clone https://github.com/anggrdwjy/build-tools-lxc
 cd build-tools-lxc/docker-wordpress-lxc
 chmod -R 777 *
 ```
 
-Install Wordpress Package :
+Install and Configuration Wordpress :
 -----------------
 ```
+#Install Wordpress
 ./docker-wordpress-lxc.sh
-```
 
-Verification :
----------------
-```
+#Verification Docker
 docker ps -a
-```
 
-Setup Wordpress :
----------------
-Wordpress Admin
-```
+#Wordpress Admin
 http://ip-address/wp-admin
 ```
 
-Cloudflared Tunnel Domain :
+Configuration Cloudflared Tunnel :
 ---------------
-Configuration Cloudflared Tunnel on Docker
 ```
 docker run --name cont-tunnel --net=mysqlnet --restart unless-stopped -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token (token id)
 ```
