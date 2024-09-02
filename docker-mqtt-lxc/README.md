@@ -18,28 +18,23 @@ chmod -R 777 *
 Install EMQX MQTT Broker :
 -----------------
 ```
+#Install EMQX
 ./docker-mqtt-lxc.sh
-```
 
-Verification :
----------------
-```
+#Verification
 docker ps -a
 ```
 
 Configuration EMQX MQTT Broker :
 ---------------
-Web Admin
-```
+#Web Admin
 http://ip-address:18083
-```
-Default Login Web UI EMQX
-```
+
+#Default Login Web UI EMQX
 - Username : Admin
 - Password : Public
-```
-Create Authentication 
-```
+
+#Create Authentication 
 - Authentication -> Build-in Database -> Prefix=Suffix
 - Authentication -> Create User -> Username=Text; Password=Text
 - MQTT Port Default : 1883
