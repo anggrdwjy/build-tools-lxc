@@ -5,7 +5,7 @@ This Package Include MYSQL Database
 
 Notes :
 ---------------
-First Step Installing Docker Daemon on Linux
+First Step Installing Docker on Linux
 Source : [Build Tools LXC](https://github.com/anggrdwjy/build-tools-lxc)
 
 Configuration :
