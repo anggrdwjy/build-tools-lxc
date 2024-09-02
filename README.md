@@ -45,18 +45,11 @@ Recommended Linux Container :
 - Rocky Linux 9
 - Almalinux 9
 
-Configuration :
+Install GIT (Optional) :
 ---------------
-Install Git (Optional)
+Ubuntu 22.04 / Debian 10 : sudo apt install git -y
 
-For Ubuntu 22.04 / Debian 10
-```
-sudo apt install git -y
-```
-For Centos 9 Stream / Rocky Linux 9/ Almalinux 9
-```
-sudo dnf install git -y 
-```
+Centos 9 Stream / Rocky Linux 9/ Almalinux 9 : sudo dnf install git -y 
 
 Git Clone Docker CE From Repository :
 ```
