@@ -6,14 +6,14 @@ This Package Include MYSQL Database
 Notes :
 ---------------
 First Step Installing Docker Daemon on Linux
-Source : https://github.com/anggrdwjy/docker-install-lxc
+Source : [Build Tools LXC](https://github.com/anggrdwjy/build-tools-lxc)
 
 Configuration :
 ---------------
 Git Clone Wordpress Package Install From Repository :
 ```
-git clone https://github.com/anggrdwjy/docker-wordpress-lxc
-cd docker-wordpress-lxc
+git clone https://github.com/anggrdwjy/build-tools-lxc
+cd build-tools-lxc/docker-wordpress-lxc
 chmod -R 777 *
 ```
 
@@ -31,17 +31,18 @@ docker ps -a
 
 Setup Wordpress :
 ---------------
-Access Web UI
+Configuration Wordpress Admin
 ```
 http://ip-address/wp-admin
 ```
 
-Cloudflared Tunnel Domain Test :
+Cloudflared Tunnel Domain :
 ---------------
 Configuration Cloudflared Tunnel on Docker
 ```
 docker run --name cont-tunnel --net=mysqlnet --restart unless-stopped -d cloudflare/cloudflared:latest tunnel --no-autoupdate run --token (token id)
 ```
+
 Notes : Website So Long Time Loading 
 
 Solutions : Enable Argo Traffic in Cloudflared
