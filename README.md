@@ -1,4 +1,5 @@
 # Proxmox Virtual Environment 7.4 Setup
+
 Update Repository :
 ---------------
 ```
@@ -11,6 +12,7 @@ deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
 root@bayfront-pve:~# nano /etc/apt/sources.list.d/ceph.list
 deb http://download.proxmox.com/debian/ceph-quincy bullseye main
 ```
+
 Verification :
 ---------------
 ```
@@ -32,6 +34,7 @@ Reading state information... Done
 N: Repository 'http://ftp.debian.org/debian bullseye InRelease' changed its 'Version' value from '11.10' to '11.11'
 root@bayfront-pve:~# 
 ```
+
 Remove Proxmox Subscription :
 ---------------
 ```
@@ -52,6 +55,7 @@ checked_command: function(orig_cmd) {
 #Restart PVE PROXY
 systemctl restart pveproxy.service
 ```
+
 SSH Configuration Linux Container / VPS :
 ---------------
 ```
@@ -120,5 +124,27 @@ TriggeredBy: * docker.socket
       Tasks: 24
      Memory: 96.5M
         CPU: 2.942s
+```
+
+Docker Command :
+---------------
+```
+#Check Container List
+docker container ls
+
+#Running All Container
+docker start $(docker ps -a -q)
+
+#Stop Container
+docker container stop (CONTAINER_NAME)
+
+#Delete Container
+docker container rm (CONTAINER_NAME)
+
+#Start Container
+docker container start (CONTAINER_NAME)
+
+#Remote Container
+docker exec -t -i (CONTAINER_NAME) /bin/bash
 ```
 
