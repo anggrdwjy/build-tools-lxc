@@ -1,5 +1,5 @@
 # Bash Scripting Install Docker
-Script Automation Install Docker CE for Linux Container
+Script Install Docker CE for Linux Container / VPS 
 
 Recommended Linux Container : 
 ---------------
@@ -29,7 +29,7 @@ cd build-tools-lxc
 chmod -R 777 *
 ```
 
-Running Install Docker :
+Install Docker :
 -----------------
 For Debian
 ```
