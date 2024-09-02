@@ -47,11 +47,16 @@ Recommended Linux Container :
 
 Install GIT (Optional) :
 ---------------
-Ubuntu 22.04 / Debian 10 : sudo apt install git -y
+```
+#Ubuntu 22.04 / Debian 10
+sudo apt install git -y
 
-Centos 9 Stream / Rocky Linux 9/ Almalinux 9 : sudo dnf install git -y 
+#Centos 9 Stream / Rocky Linux 9/ Almalinux 9
+sudo dnf install git -y 
+```
 
-Git Clone Docker CE From Repository :
+GIT Clone Docker From Repository :
+---------------
 ```
 git clone https://github.com/anggrdwjy/build-tools-lxc
 cd build-tools-lxc
@@ -60,16 +65,14 @@ chmod -R 777 *
 
 Install Docker :
 -----------------
-For Debian
 ```
+#Debian
 ./debian-install.sh
-```
-For Ubuntu
-```
+
+#Ubuntu
 ./ubuntu-install.sh              
-```
-For Centos 9 Stream / Rocky Linux 9/ Almalinux 9
-```
+
+#Centos 9 Stream / Rocky Linux 9/ Almalinux 9
 ./rheldistribution-install.sh
 ```
 
