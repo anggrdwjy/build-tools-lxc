@@ -1,17 +1,17 @@
 # Bash Scripting NodeRED on Docker
-Script Automation Installation and Running NodeRED on Docker Container
+Script Installation and Running NodeRED on Docker Container
 
 Notes :
 ---------------
-First Step Installing Docker Daemon on Linux
-Source : https://github.com/anggrdwjy/docker-install-lxc
+First Step Installing Docker on Linux
+Source : [Build Tools LXC](https://github.com/anggrdwjy/build-tools-lxc)
 
 Configuration :
 ---------------
 Git Clone NodeRED From Repository :
 ```
-git clone https://github.com/anggrdwjy/docker-nodered-lxc
-cd docker-nodered-lxc
+git clone https://github.com/anggrdwjy/build-tools-lxc
+cd build-tools-lxc/docker-nodered-lxc
 chmod -R 777 *
 ```
 
