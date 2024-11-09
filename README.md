@@ -3,6 +3,8 @@
 Update Repository :
 ---------------
 ```
+root@bayfront-pve:~# rm /etc/apt/sources.list.d/pve-enterprise.list
+
 root@bayfront-pve:~# nano /etc/apt/sources.list
 deb http://ftp.debian.org/debian bullseye main contrib
 deb http://ftp.debian.org/debian bullseye-updates main contrib
